@@ -7,11 +7,14 @@ const GsapStagger = () => {
         gsap.to('.stagger-box', {
             y: 20,
             duration: 1,
-            stagger: 0.1,
+            stagger: {
+                each: 0.5,
+                from: 'start',
+            },
             repeat: -1,
-            // opacity: 0,
             scale: 0.1,
             rotate: 360,
+
             yoyo: true,
         })
     }, [])
