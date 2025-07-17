@@ -15,9 +15,10 @@ const GsapFromTo = () => {
                 delay: 0,
                 opacity: 1,
                 x: 0,
-                duration: 1,
+                duration: 1.5,
                 repeat: -1,
                 yoyo: true,
+                borderRadius: '50%',
             })
     }, []);
 
